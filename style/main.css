@@ -1,0 +1,114 @@
+:root{  /** Configura Variaveis com cores para o site */
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{ /** Configura alinhamento da página para qualquer navegador */
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/* Elementos Base */
+
+body{ /** Realiza configurações dentro da TAG BODY */
+   background-color: var(--preta); /**  Coloca o Fundo da pagina na cor informada */
+   font-family: 'arial', Times, serif; /** Informa a fonte que sera utilizada no site */
+   color: white;
+}
+
+
+header .container{ /** Configura variavel container */
+    display: flex; /** Alinha texto na parte direita da tela */
+    flex-direction: row; /** Linha padrão mesmo não adicionada ela não altera o código */
+    align-items: center; /** Alinha texto ao centro da caixa */
+    justify-content: space-between; /** Adiciona espacamento */
+}
+
+header .logo{
+    margin-left: 5px; /** adiciona margem de 5px sobre a margem esqueda do site */
+    color:var(--vermelho); /* Adiciona a cor da variavel vermelho */
+    font-family: 'Arial', Times; /* Configura a fonte que é usada no texto */
+    font-size: 40px; /* informa o tamanho do texto */
+}
+
+header nav a{ /* Variavel a */
+    text-decoration: none; /** Retinha linha sublinhada do texto */ 
+    color: #aaa; /* Informa a cor que o texto ira ter */
+    margin-right: 10px; /* Informa o tamanho que tera o texto */
+}
+
+header nav a:hover{ /* Comando quando for passado o mouse emcima */
+    color:#fff; /* Informa a cor que será mostrada quando passar o mouse emcima */
+}
+
+/* Filme Principal */
+.filme-principal{
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa.jpg'); /* Referencia imagem de fundo */
+
+    height: 500px; /* tamanho da imagem */
+    background-size: cover; /* Ajusta imagem ao tamanho da "Caixa" */
+
+    display: flex; /* TOrna a caixa FLEX */
+    flex-direction: column; /* Configura para alinhar em colunas */
+    
+}
+
+.filme-principal .descricao{
+    margin-top: 10px; /* Cria espaço ao topo */
+    margin-bottom: 40px; /* Cria margem de distanciamento entre elementos acima */
+    
+}
+
+.filme-principal .titulo{
+    margin-top: 7%; /* adiciona espaço ao topo */
+    font-size: 50px; /* Ajusta tamanho do texto */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.botao{
+    background-color: rgba(0,0,0,0.50); /* cria efeito nos botões */
+    border:none; /* Retira borda de um retangulo */
+    color: white;
+    font-family: Arial;
+    text-decoration: none;
+
+    padding: 15px 30px; /* Ajusta ditancia da caixa */
+    margin-right: 15px; /* Separa um btão do outro */
+    font-size: 12px; /* ajusta tamanho da fonte */
+
+    cursor: pointer; /* Altera o cursor para ponteiro */
+    transition: .3s ease all; /* Cria transição de 3seg sobre o proximo efeito */
+}
+
+.botao:hover{ /* Quando usuário passar o mouse */
+    background-color: white; /* Altera fundo para branco */
+    color:black; /* Altera letras para preto */
+    
+}
+
+.botao i{ /* Altera margem de icone no botão */
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{ /* Alinha espaçamento da caixa somente no container dentro da clase filme principal */
+    width: 60%;
+}
+
+.box-filme{ /* Configuração imagem owl carrossel */
+
+    height: 100%;
+    width: 100%;
+    display: box;
+}
+
+.carrosel-filmes{ /* Afasta carrosel do filme principal */
+    margin-top: 5px;
+}

@@ -1,0 +1,36 @@
+@media screen and (max-width:700px){ /* Ajusta configuração quando a tela chegar até 700px */
+    header .container{
+        display: flex;
+        flex-direction: column; /* joga o texto para baixo quando abaixo de 700px */
+    }
+
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+        /* height: 60px; */
+    }
+
+    .info-filme .info{ /* Limita caixa de texto */
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 15; /* Limite de linhas */
+    -webkit-box-orient: vertical;
+    }
+
+}
+
+@media screen and (min-width:1000px); {  /* Alinha texto a proporção da tela */
+    .descricao{
+        width: 50% ;
+    }
+}
+
+
+@media screen and (min-width:1000px); {  /* Alinha texto a proporção da tela */
+    .info{
+        width: 50% ;
+    }
+}
+

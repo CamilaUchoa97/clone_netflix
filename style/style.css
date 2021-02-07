@@ -1,0 +1,56 @@
+:root{  /** Configura Variaveis com cores para o site */
+    --vermelho:#E50914;
+    --preta:#141414;
+    --amarelo:#ffff00;
+}
+
+*{ /** Configura alinhamento da página para qualquer navegador */
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:var(--preta)
+}
+
+header .container{
+    display: flex; /** Alinha texto na parte direita da tela */
+    flex-direction: row; /** Linha padrão mesmo não adicionada ela não altera o código */
+    align-items: center; /** Alinha texto ao centro da caixa */
+    justify-content: space-between; /** Adiciona espacamento */
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-size: 40px;
+    text-decoration: none;
+    margin-left: 15px;
+    
+
+}
+
+/* TEXTO DIRETA DO SITE */
+nav a{
+    color:#aaa;
+    text-decoration: none;
+    margin-right: 10px; /* Informa o tamanho que tera o texto */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav a:hover{ /* Comando quando for passado o mouse emcima */
+    color:#fff; /* Informa a cor que será mostrada quando passar o mouse emcima */
+}
+
+main h1{
+    color: var(--vermelho);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 15%;
+
+}
+
+main h1:hover{
+    color:white
+
+}
